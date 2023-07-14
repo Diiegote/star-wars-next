@@ -1,35 +1,44 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Star Wars API Frontend
 
-## Getting Started
+* Este proyecto es un frontend creado con Next.js y estilizado con Tailwind CSS. Fue diseñado específicamente para probar el microservicio construido con Node.js, Express y Docker que se encuentra en el repositorio [star-wars-api-microservices](https://github.com/Diiegote/star-wars-api-microservices). Proporciona una interfaz de usuario sencilla para interactuar con el microservicio y visualizar los datos relacionados con el universo de Star Wars.
 
-First, run the development server:
+## Características
 
-```bash
+ Interfaz de usuario moderna y receptiva.
+- Diseño optimizado con estilos predefinidos de Tailwind CSS.
+- Conexión con el microservicio de Star Wars API para obtener datos actualizados.
+- Navegación intuitiva para explorar diferentes categorías de información.
+- Visualización clara y concisa de los datos obtenidos.
+
+## Requisitos previos
+
+Antes de comenzar a utilizar este frontend, asegúrate de tener instalada la siguiente herramienta:
+
+- Node.js: [Descargar Node.js](https://nodejs.org)
+
+## Instalación
+
+Sigue estos pasos para instalar y ejecutar el frontend:
+
+1. Clona este repositorio en tu máquina local:
+git clone <URL_DEL_REPOSITORIO>
+
+2. Ve al directorio del proyecto:
+cd star-wars-api-frontend
+
+3. Instala las dependencias del proyecto utilizando npm:
+npm install
+
+4. Ejecuta el servidor de desarrollo:
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+5. Accede a la aplicación en tu navegador:
+http://localhost:3000
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+# Contribuciones
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+* ¡Las contribuciones son bienvenidas! Si deseas mejorar este proyecto, siéntete libre de enviar una solicitud de extracción. Antes de realizar cambios significativos, crea una issue para discutir los detalles y asegurarte de que no se estén duplicando esfuerzos.
 
-## Learn More
+# Contacto
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
-# star-wars-next
+* Si tienes alguna pregunta o sugerencia relacionada con este proyecto, no dudes en contactarme. Mi información de contacto se encuentra en mi perfil de GitHub.

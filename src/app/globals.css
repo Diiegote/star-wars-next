@@ -1,27 +1,84 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-}
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+@import "tailwindcss/tailwind.css";
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: #0f0c29;
+  background-image: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+  background-color: #0f0c29;
+  background-image: linear-gradient(to bottom, #0f0c29, #302b63, #24243e);
+}
+
+.characters-container {
+  margin-top: 15rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  grid-gap: 2rem;
+  cursor: pointer;
+}
+.character-container {
+  margin-top: 6rem;
+  grid-gap: 2rem;
+}
+
+.character-card {
+  background-color: #914e14;
+  color: white;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.character-card h5 {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+}
+
+.character-card h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+.character-name {
+  height: 40px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1.7rem;
+}
+
+.character-card:hover {
+  box-shadow:
+    1px 0 5px 5px rgba(253, 224, 66, 0.25),
+    1px 0 5px 5px rgba(253, 224, 66, 0.25),
+    0 2px 4px 1px rgba(253, 224, 66, 0.15);
+}
+.planet-card:hover{
+  box-shadow:
+  1px 0 5px 5px rgba(253, 224, 66, 0.25),
+  1px 0 5px 5px rgba(253, 224, 66, 0.25),
+  0 2px 4px 1px rgba(253, 224, 66, 0.15);
+}
+.film-card:hover{
+  box-shadow:
+  1px 0 5px 5px rgba(253, 224, 66, 0.25),
+  1px 0 5px 5px rgba(253, 224, 66, 0.25),
+  0 2px 4px 1px rgba(253, 224, 66, 0.15);
+}
+.character-title{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-size: 1rem;
 }
